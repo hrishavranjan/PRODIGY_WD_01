@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem; 
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background 0.3s;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: rgb(207, 231, 69);
+    font-size: 1.8rem;
+    transition: color 0.3s, background-color 0.3s; 
+    cursor: pointer; 
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+}
+
+.nav-item a:hover {
+    color: #FFD700;
+    background-color: rgba(255, 215, 0, 0.4); /* Light yellow background on hover with transparency */
+}
+
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center
+}
+
+#home {
+    background-image: url('Images/Home.jpg');
+}
+
+#about {
+    background-image: url('Images/About.jpg');
+}
+
+#services {
+    background-image: url('Images/services.jpg');
+}
+
+#contact {
+    background-image: url('Images/contact.avif');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+section h1 {
+    font-size: 3rem; 
+    color: rgb(4, 2, 3);
+    margin-top: -.001cm; 
+    margin-left: 3.5cm;
+    font-family: "Playwrite NL", cursive;
+}
+
+
+section p {
+    font-size: 1.4rem; 
+    line-height: 1.8; 
+    margin-top: 5cm; 
+    margin-left: 4cm; 
+    padding: 1rem; 
+    background-color: rgba(108, 53, 69, 0.8); 
+    display: inline-block; 
+}
+
+.social-media {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .social-media a img {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    background-color: white; 
+    border-radius: 5px; 
+  }
